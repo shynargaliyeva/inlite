@@ -1,11 +1,22 @@
-<h2>Movie Details</h2>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h2>Movie Details</h2>
+        <%= image_tag(@movie.image_uri, class: "dashboard-image") %>
+            <div class="details">
+                <h3><%= @movie.title %></h3>
+                <p><%= @movie.year %> &nbsp;&nbsp;|&nbsp;&nbsp;<%= @movie.run_time %>&nbsp;&nbsp;|&nbsp;&nbsp;<%= @movie.rating %>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <%= @movie.genres.each do |genre| %>
+                        <% @movie.genres %>
+                    <% end %>
+                </p>
+                <div class="psychologist"><strong>Recommended by</strong><br><%= @movie.psychologist %></div><br>
+            </div>
+    </div>
+</div>
 
-<%= image_tag(@movie.image_uri, class: "dashboard-image") %>
-<h3><%= @movie.title %></h3>
-<p><%= @movie.year %> &nbsp;&nbsp;|&nbsp;&nbsp;<%= @movie.run_time %>&nbsp;&nbsp;|&nbsp;&nbsp;<%= @movie.rating %>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
-<div class="psychologist"><strong>Recommended by</strong><br><%= @movie.psychologist %></div><br>
+
 <%# <div><%= @movie.synopsis %>
 <%# <div class="why_recs"><strong>Why this movie?</strong><br><%= @movie.why_recommend %>
 <%# <div class="learn"><strong>What can you learn</strong><br><%= @movie.learn %>
 
-<%= link_to "Back", movies_path %>
+<%= link_to "Back", movies_path, class: "btn btn-default" %>

@@ -10,7 +10,7 @@ Genre.destroy_all
 Issue.destroy_all
 
 movies = Movie.create([
-    {title: "Birdman or (The Unexpected Virtue of Ignorance)", 
+    {title: "Birdman", 
     year: 2014, run_time: "1h 59min", rating: "R", 
     synopsis: "A washed-up actor, who once played an iconic superhero, attempts to revive his career by writing and starring in his very own Broadway play.", 
     psychologist: "Timothy Yen, Psy. D., Licensed Clinical Psychologist", 
@@ -32,7 +32,7 @@ movies = Movie.create([
     year: 2016, run_time: "1h 51min", rating: "R", 
     synopsis: "A chronicle of the childhood, adolescence and burgeoning adulthood of a young, African-American, gay man growing up in a rough neighborhood of Miami.", 
     psychologist: "Timothy Yen, Psy. D., Licensed Clinical Psychologist",
-    image_uri: "https://i.imgur.com/2yZIhUM.jpg"},
+    image_uri: "https://i.imgur.com/ZmW67L2.jpg"},
 
     {title: "Miss Sloane", 
     year: 2016, run_time: "2h 12min", rating: "R", 
@@ -56,7 +56,7 @@ movies = Movie.create([
     year: 2012, run_time: "2h 2min", rating: "R", 
     synopsis: "After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own.",
     psychologist: "Timothy Yen, Psy. D., Licensed Clinical Psychologist",
-    image_uri: "https://i.imgur.com/mYYpGm6.jpg"},
+    image_uri: "https://i.imgur.com/G1HfS0q.jpg"},
 
     {title: "Manchester by the Sea", 
     year: 2016, run_time: "2h 17min", rating: "R", 
