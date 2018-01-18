@@ -5,8 +5,8 @@
             <div class="details">
                 <h3><%= @movie.title %></h3>
                 <p><%= @movie.year %> &nbsp;&nbsp;|&nbsp;&nbsp;<%= @movie.run_time %>&nbsp;&nbsp;|&nbsp;&nbsp;<%= @movie.rating %>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    <%= @movie.genres.each do |genre| %>
-                        <% @movie.genres %>
+                    <% @movie.genres.each do |genre| %>
+                        <%= genre.keyword %>
                     <% end %>
                 </p>
                 <div class="psychologist"><strong>Recommended by</strong><br><%= @movie.psychologist %></div><br>

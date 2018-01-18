@@ -20,13 +20,13 @@ movies = Movie.create([
     year: 2013, run_time: "2h 6min", rating: "R", 
     synopsis: "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.", 
     psychologist: "Timothy Yen, Psy. D., Licensed Clinical Psychologist",
-    image_uri: "https://i.imgur.com/jJp8AMe.jpg"},
+    image_uri: "https://i.imgur.com/xHfiY6h.jpg"},
 
     {title: "Frances Ha", 
     year: 2012, run_time: "1h 26min", rating: "R", 
     synopsis: "A story that follows as a New York woman (who doesn't really have an apartment) apprentices for a dance company (though she's not really a dancer) and throws herself headlong into her dreams, even as their possibility dwindles.", 
     psychologist: "Dr. Joy Jacobs J.D., Ph.D., Clinical Psychologist",
-    image_uri: "https://i.imgur.com/seNJF16.jpg"},
+    image_uri: "https://i.imgur.com/GpCNckL.jpg"},
 
     {title: "Moonlight", 
     year: 2016, run_time: "1h 51min", rating: "R", 
@@ -62,7 +62,7 @@ movies = Movie.create([
     year: 2016, run_time: "2h 17min", rating: "R", 
     synopsis: "A depressed uncle is asked to take care of his teenage nephew after the boy's father dies.", 
     psychologist: "Timothy Yen, Psy. D., Licensed Clinical Psychologist",
-    image_uri: "https://i.imgur.com/Z7mLBSW.jpg"},
+    image_uri: "https://i.imgur.com/2UGUuxi.jpg"},
 
     {title: "Whiplash", 
     year: 2014, run_time: "1h 47min", rating: "R", 
@@ -80,7 +80,7 @@ movies = Movie.create([
     year: 2015, run_time: "1h 41min", rating: "R", 
     synopsis: "Adam Jones is a chef who destroyed his career with drugs and diva behavior. He cleans up and returns to London, determined to redeem himself by spearheading a top restaurant that can gain three Michelin stars.", 
     psychologist: "Dr. Joy Jacobs J.D., Ph.D., Clinical Psychologist",
-    image_uri: "https://i.imgur.com/CKtZrM9.jpg"}
+    image_uri: "https://i.imgur.com/9C7YmRg.jpg"}
 ])
 
 genres = Genre.create([
