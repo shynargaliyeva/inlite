@@ -1,4 +1,8 @@
 
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
 
 .dashboard-image {
     width: 1080px;
@@ -22,4 +26,11 @@
 .il-thumbnail-image {
     width: 270px;
     height: 180px;
+    box-shadow: 10px 10px 10px rgb(155, 151, 151);
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #262626;
 }

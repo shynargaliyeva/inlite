@@ -17,6 +17,13 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = current_user
+  end
+
+  def update
+    @user = current_user
+    @user.update_attributes(user_params)
+    redirect_to profile_edit_path
   end
 
   def addissue
@@ -30,7 +37,7 @@ class UsersController < ApplicationController
   end
 
   def movies
-    @movies = current_user.movies
+    @movies = current_user.dont_watch
   end
 
   private

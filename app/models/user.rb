@@ -10,6 +10,10 @@ class User < ApplicationRecord
         Issue.where("id NOT IN (?)", issues)
     end
 
+    def dont_watch
+        Movie.where("id NOT IN (?)", self.movies.to_a)
+    end
+
     # def movies
     #     issues = self.issues.select(:id)
     #     Movie.joins(:issues).where("issues.id IN (?)", issues).distinct

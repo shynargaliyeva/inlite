@@ -13,8 +13,6 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
 
 body {
     padding-top: 70px;
@@ -29,10 +27,24 @@ body {
     height: 180px;
 }
 
-.btn {
+.logout, .login, .signup, .call-to-action, .save, .search-button {
     background-color: #FF9681;
     border: 1px solid white;
     border-radius: 0;
     color: white;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px
+}
+
+.movie-grid {
+    position: absolute;
+    left: 13%;  
+}
+
+.text {
+    float: right;
 }
 

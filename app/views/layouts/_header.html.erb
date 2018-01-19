@@ -17,17 +17,17 @@
                 <li><%= link_to "My Movies", profile_movies_path %></li>
                 Welcome, <%= current_user.name %>
                 &nbsp;&nbsp;|&nbsp;&nbsp;
-                <%= link_to 'Log Out', session_path('dummy'), method: :delete, class: "btn btn-default navbar-btn"%>
+                <%= link_to 'Log Out', session_path('dummy'), method: :delete, class: "logout btn btn-default navbar-btn"%>
               <% else %>
-                <%= link_to 'Log In', login_path, class: "btn btn-default navbar-btn" %>
-                &nbsp;&nbsp;
-                <%= link_to 'Sign Up', new_user_path, class: "btn btn-default navbar-btn" %>
+                <%= link_to 'Log In', login_path, class: "login btn btn-default navbar-btn" %>
+                &nbsp;|&nbsp;
+                <%= link_to 'Sign Up', new_user_path, class: "signup btn btn-default navbar-btn" %>
               <% end %>
             </ul>
             <div class="navbar-form" role="search">
                 <%= form_tag movies_path, :method => 'get' do %>
                     <%= text_field_tag :search, params[:search] %>
-                    <%= submit_tag "Search", name: nil %>
+                    <%= submit_tag "Search", name: nil, class: "search-button" %>
                 <% end %>
             </div>
           </div>
