@@ -12,6 +12,7 @@ Inlite is a Cinema Therapy app, this project is a very early MVP or proof of con
 * CSS
 * Bootstrap
 * HTML
+* PostgreSQL
 
 ## App screenshots
 ![Movie List](https://i.imgur.com/BdobNRM.png)
