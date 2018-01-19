@@ -1,24 +1,34 @@
-# README
+# Inlite
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Inlite logo screen shot](https://i.imgur.com/Th76vrc.png)
 
-Things you may want to cover:
+## About Inlite
+Inlite is a Cinema Therapy app, this project is a very early MVP or proof of concept app. A user can see a list of Movies that where analysed and recommended by Inlite's network of licensed psychologists and filter movie recs based on mental issues.
 
-* Ruby version
+# Getting started
 
-* System dependencies
+## Tech used
+* Ruby on Rails
+* CSS
+* Bootstrap
+* HTML
 
-* Configuration
+## App screenshots
+![Movie List](https://i.imgur.com/BdobNRM.png)
+![User Profile](https://i.imgur.com/CF3N1S8.png)
+![User Movies](https://i.imgur.com/QqiDJ7f.png)
 
-* Database creation
+## Take it for a test drive
+https://inlite.herokuapp.com/
 
-* Database initialization
+## Trello board
+https://trello.com/b/oylGnEh4/wdi-project-2-inlite
 
-* How to run the test suite
+## Unsolved problems
+* Design a landing page
+* Styling in general
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Next Steps
+* Media player
+* Design an Inlite landing page
+* My list - add movies to my list to watch them later
