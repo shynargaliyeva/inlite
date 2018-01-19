@@ -2,9 +2,12 @@ class MoviesController < ApplicationController
     # before_action :set_house, only: [:show, :edit, :update, :destroy]
     # before_action :authorize, except: [:index, :show]
 
+    def new 
+
+    end
+    
     def index
         @movies = Movie.search(params[:search])
-        # s@movies = Movie.all
     end
 
     def show

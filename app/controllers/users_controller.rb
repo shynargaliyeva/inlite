@@ -10,9 +10,27 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       flash[:notice] = "You have successfully signed up!"
       redirect_to movies_path
+    
     else
       render :new
     end
+  end
+
+  def edit
+  end
+
+  def addissue
+    current_user.issues.push(Issue.find(params[:id]))
+    redirect_to profile_edit_path
+  end
+  
+  def removeissue
+    current_user.issues.delete(params[:id])
+    redirect_to profile_edit_path
+  end
+
+  def movies
+    @movies = current_user.movies
   end
 
   private

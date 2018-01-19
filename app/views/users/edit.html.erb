@@ -1,0 +1,16 @@
+<h1>User Dashboard</h1>
+<p>Please choose tags that fit your mood from the list below.</p>
+
+<h3>Your Issues</h3>
+<div class="issues">
+    <% current_user.issues.each do |issue| %>
+        <%= link_to issue.keyword, removeissue_path(issue), method: :delete %>
+    <% end %>
+</div>
+
+<h3>Issues Available</h3>
+<div class="issues">
+    <% current_user.unassigned_issues.each do |issue| %>
+        <%= link_to issue.keyword, addissue_path(issue), method: :post %>
+    <% end %>
+</div>

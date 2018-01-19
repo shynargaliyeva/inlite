@@ -12,8 +12,9 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <% if current_user %>
-                <%# <li><%= link_to "Movies", movies_path %>
-                <%# <li><%= link_to "User Dashboard", movie_path(movie) %>
+                <li><%= link_to "All Movies", movies_path %></li>
+                <li><%= link_to "My Profile", profile_edit_path %></li>
+                <li><%= link_to "My Movies", profile_movies_path %></li>
                 Welcome, <%= current_user.name %>
                 &nbsp;&nbsp;|&nbsp;&nbsp;
                 <%= link_to 'Log Out', session_path('dummy'), method: :delete, class: "btn btn-default navbar-btn"%>

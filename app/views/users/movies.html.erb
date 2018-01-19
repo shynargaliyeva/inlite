@@ -1,0 +1,20 @@
+<h1>My Movies</h1>
+
+<% if current_user.movies.count > 0 %>
+
+    <div class="row">   
+        <% @movies.each do |movie| %>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail il-thumbnail-image">
+                    <%= link_to (image_tag(movie.image_uri, alt: "Movie picture", class: "movie-image")), movie_path(movie) %>
+                </div>
+                <div>
+                    <h4><%= link_to movie.title, movie_path(movie) %></h4><br>
+                </div>
+            </div>
+        <% end %>
+    </div>
+
+<% else %>
+    <h4>Go back and update your profile to see a list of therapeutic movies.</h4>
+<% end %>

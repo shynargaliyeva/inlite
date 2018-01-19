@@ -6,7 +6,12 @@ Rails.application.routes.draw do
   resources :movies
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
-  get '/login', to: 'sessions#new'
 
+  get '/profile/edit', to: 'users#edit'
+  get "/profile/movies", to: "users#movies", as: "profile_movies"
+  post "/profile/issues/:id", to: "users#addissue", as: "addissue"
+  delete "/profile/issues/:id", to: "users#removeissue", as: "removeissue"
+
+  get '/login', to: 'sessions#new'
 
 end
