@@ -1,6 +1,7 @@
 class Movie < ApplicationRecord
     has_and_belongs_to_many :genres
     has_and_belongs_to_many :issues
+    before_action :authorize
 
     def self.search(search)
         if search
