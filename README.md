@@ -20,7 +20,7 @@ Inlite is a Cinema Therapy app, this project is a very early MVP or proof of con
 ![User Movies](https://i.imgur.com/QqiDJ7f.png)
 
 ## Take it for a test drive
-https://inlite.herokuapp.com/
+https://inlite-ruby.herokuapp.com/
 
 ## Trello board
 https://trello.com/b/oylGnEh4/wdi-project-2-inlite
